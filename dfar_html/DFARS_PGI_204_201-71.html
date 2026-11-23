@@ -7,49 +7,51 @@
 <body><h2>PGI 204.201-71 Cross reference to Federal Procurement Data System.</h2>
 <div class="body conbody"><p class="p">The following matrices should be used as a cross reference between the terms used in the FAR, DFARS, and Federal Procurement Data System (FPDS). See Next Page</p>
 <table>
-<tr><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>A - DoD Procurement</td><td>Consists of</td><td>the concatenation of</td><td>the following four fields:</td><td></td></tr>
-<tr><td>Instrument Identifier (PIID)</td><td>Enterprise Identifier - DODAAC of contracting office</td><td>Fiscal Year in which award is made</td><td>Procurement Instrument Type Code</td><td>Serialized Identifier</td></tr>
-<tr><td></td><td>Six alpha- numeric characters excluding I and O</td><td>Two numeric characters</td><td>One alpha character excluding I and O</td><td>Four alpha- numeric characters excluding I and O. 0000 is not an acceptable value.</td></tr>
-<tr><td>B - DoD Order Number (Supplementary PIID)</td><td>Four prohibited in (NOTE: Four allowed to be be in the activities are this new agreements. 2016.)</td><td>alpha-numeric characters the first position. 0000 character supplementary issued through FY16. format shown above in encouraged to transition method for numbering Transition must be</td><td>excluding I and O. A and is not an acceptable PIID order numbers Subsequently, all section A of this table. as soon as possible orders under DoD contracts completed no later than</td><td>P are value. are only orders must DoD in FY16 to and October 1,</td></tr>
-<tr><td>C - DoD Procurement Instrument Modification Identifier (Supplementary PIID)</td><td>Six alpha-numeric O. P00000</td><td>characters and A00000 are not</td><td>beginning with A or P, excluding acceptable values.</td><td>I and</td></tr>
-<tr><td>D - DoD Order Modification Identifier (Supplementary PIID)</td><td>Two alpha-numeric acceptable (NOTE: Two are only Modification method of must be in</td><td>characters value. character supplementary allowed to be issued to to DoD orders issued numbering orders under the form shown in section</td><td>excluding I and O. 00 is PIID modification DoD orders issued through after the transition to DoD contracts and C of this table.</td><td>not an numbers FY16. the new agreements</td></tr>
-<tr><td>E - Non DoD Procurement</td><td>4 to 50</td><td>Alpha-numeric characters</td><td></td><td></td></tr>
-<tr><td></td><td></td><td>Required as shown the action.</td><td>below to</td><td>uniquely identify</td></tr>
-<tr><td>Procurement Instrument Action Type</td><td>Reference Procurement Instrument (Reference Use Only)</td><td>Procurement Instrument Identifier (PIID) (Contract Number)</td><td>Order Number</td><td>Modification Number</td></tr>
+<tr><th colspan="5">STRUCTURE OF REQUIRED IDENTIFIERS</th></tr>
+<tr><td>Key and Description</td><td colspan="2">Format</td><td></td><td></td></tr>
+<tr><td>A - DoD Procurement Instrument Identifier (PIID)</td><td colspan="4">Consists of the concatenation of the following four fields:</td></tr>
+<tr><td></td><td>Enterprise Identifier - DODAAC of contracting office</td><td>Fiscal Year in which award is made</td><td>Procurement Instrument Type Code</td><td>Serialized Identifier</td></tr>
+<tr><td></td><td>Six alpha-numeric characters excluding I and O</td><td>Two numeric characters</td><td>One alpha character excluding I and O</td><td>Four alpha-numeric characters excluding I and O. 0000 is not an acceptable value.</td></tr>
+<tr><td>B - DoD Order Number (Supplementary PIID)</td><td colspan="4">Four alpha-numeric characters excluding I and O. A and P are prohibited in the first position. 0000 is not an acceptable value. (NOTE: Four character supplementary PIID order numbers are only allowed to be issued through FY16. Subsequently, all orders must be in the format shown above in section A of this table. DoD activities are encouraged to transition as soon as possible in FY16 to this new method for numbering orders under DoD contracts and agreements. Transition must be completed no later than October 1, 2016.)</td></tr>
+<tr><td>C - DoD Procurement Instrument Modification Identifier (Supplementary PIID)</td><td colspan="4">Six alpha-numeric characters beginning with A or P, excluding I and O. P00000 and A00000 are not acceptable values.</td></tr>
+<tr><td>D - DoD Order Modification Identifier (Supplementary PIID)</td><td colspan="4">Two alpha-numeric characters excluding I and O. 00 is not an acceptable value. (NOTE: Two character supplementary PIID modification numbers are only allowed to be issued to DoD orders issued through FY16. Modification to DoD orders issued after the transition to the new method of numbering orders under DoD contracts and agreements must be in the form shown in section C of this table.</td></tr>
+<tr><td>E - Non DoD Procurement</td><td colspan="4">4 to 50 Alpha-numeric characters</td></tr>
+<tr><td colspan="5">Instrument Number ELEMENTS NEEDED TO IDENTIFY A DEPARTMENT OF DEFENSE</td></tr>
+<tr><td colspan="5">PROCUREMENT ACTION</td></tr>
+<tr><td>Procurement Instrument Action Type</td><td></td><td colspan="3">Required as shown below to uniquely identify the action.</td></tr>
+<tr><td></td><td>Reference Procurement Instrument (Reference Use Only)</td><td>Procurement Instrument Identifier (PIID) (Contract Number)</td><td>Order Number</td><td>Modification Number</td></tr>
 <tr><td>BPA or Order under a Schedule or other non-DoD Instrument</td><td></td><td>E</td><td>A</td><td></td></tr>
 <tr><td>Order against a BPA under a Schedule (FY16 and later)</td><td>E</td><td>A</td><td>A</td><td></td></tr>
-<tr><td>Order against a BPA under a Schedule (Pre- FY16)</td><td>E</td><td>A</td><td>B</td><td></td></tr>
+<tr><td>Order against a BPA under a Schedule (Pre-FY16)</td><td>E</td><td>A</td><td>B</td><td></td></tr>
 <tr><td>DoD Contract, Purchase Order, BOA, BPA not under a Schedule, or other instrument</td><td></td><td>A</td><td></td><td></td></tr>
 <tr><td>Order against a DoD Contract, BOA, BPA not under a Schedule, or other instrument (FY16 and later)</td><td></td><td>A</td><td>A</td><td></td></tr>
 <tr><td>Order against a DoD Contract, BOA, BPA not under a Schedule or other instrument (Pre-FY16)</td><td></td><td>A</td><td>B</td><td></td></tr>
+<tr><td>Modification to a BPA or Order under a Schedule or other non-DoD instrument</td><td>E</td><td>A</td><td></td><td>C</td></tr>
+<tr><td>Modification to an Order against a BPA under a Schedule (FY16 and later)</td><td>E</td><td>A</td><td>A</td><td>C</td></tr>
+<tr><td>Modification to an Order against a BPA under a Schedule (Pre-FY16)</td><td>E</td><td>A</td><td>B</td><td>D</td></tr>
+<tr><td>Modification to a DoD Contract, Purchase Order, BOA, BPA not under a Schedule, or other instrument</td><td></td><td>A</td><td></td><td>C</td></tr>
+<tr><td>Modification to an Order against a DoD Contract, BOA, or BPA not under a schedule (FY16 and later)</td><td></td><td>A</td><td>A</td><td>C</td></tr>
+<tr><td>Modification to an Order against a DoD Contract, BOA, or BPA not under a schedule (Pre-FY16)</td><td></td><td>A</td><td>B</td><td>D</td></tr>
 </table>
 <table>
-<tr><th>Modification to a</th><th>E</th><th>A</th><th></th><th>C</th></tr>
-<tr><td>Modification to an</td><td>E</td><td>A</td><td>A</td><td>C</td></tr>
-<tr><td>Modification to an</td><td>E</td><td>A</td><td>B</td><td>D</td></tr>
-<tr><td>Modification to a</td><td></td><td>A</td><td></td><td>C</td></tr>
-<tr><td>Modification to an</td><td></td><td>A</td><td>A</td><td>C</td></tr>
-<tr><td>Modification to an</td><td></td><td>A</td><td>B</td><td>D</td></tr>
-</table>
-<table>
-<tr><td>FPDS Crosswalk</td><td>REF_IDV</td><td>REF_IDV_MODIFI-</td><td>PIID</td><td>MODIFICATION_NUM</td></tr>
-<tr><td>BPA or Order</td><td>E</td><td>Use 0</td><td>A</td><td>Use 0</td></tr>
-<tr><td>Order against a</td><td>A</td><td>Use 0</td><td>A</td><td>Use 0</td></tr>
+<tr><th>FPDS Crosswalk</th><th colspan="4">FPDS FIELD NAME</th></tr>
+<tr><td></td><td>REF_IDV _PIID</td><td>REF_IDV_MODIFI-CATION_NUMBER</td><td>PIID</td><td>MODIFICATION_NUM BER</td></tr>
+<tr><td>BPA or Order under a Schedule or other non-DoD Instrument</td><td>E</td><td>Use 0</td><td>A</td><td>Use 0</td></tr>
+<tr><td>Order against a BPA under a Schedule (FY16 and later)</td><td>A</td><td>Use 0</td><td>A</td><td>Use 0</td></tr>
 <tr><td>Order against a BPA under a Schedule</td><td>A</td><td>Use 0</td><td>B*</td><td>Use 0</td></tr>
-<tr><td>(Pre-FY16)</td><td></td><td></td><td></td><td></td></tr>
-<tr><td>DoD Contract,</td><td></td><td></td><td>A</td><td>Use 0</td></tr>
-<tr><td>Order against a</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
-<tr><td>Order against a</td><td>A</td><td>Use 0</td><td>B*</td><td>D*</td></tr>
-<tr><td>Modification to a</td><td></td><td></td><td>A</td><td>C</td></tr>
-<tr><td>Modification to an</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
-<tr><td>Modification to an</td><td>A</td><td>Use 0</td><td>B*</td><td>D*</td></tr>
-<tr><td>Modification to a</td><td></td><td></td><td>A</td><td>C</td></tr>
-<tr><td>Modification to an</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
-</table>
-<table>
-<tr><th>(FY16 and later)</th><th></th><th></th><th></th><th></th></tr>
+<tr><td colspan="5">(Pre-FY16)</td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>DoD Contract, Purchase Order, BOA, BPA not under a Schedule, or other instrument</td><td></td><td></td><td>A</td><td>Use 0</td></tr>
+<tr><td>Order against a DoD Contract, BOA, BPA not under a Schedule, or other instrument (FY16 and later)</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
+<tr><td>Order against a DoD Contract, BOA, BPA not under a Schedule, or other instrument (Pre-FY16)</td><td>A</td><td>Use 0</td><td>B*</td><td>D*</td></tr>
+<tr><td>Modification to a BPA or Order under a Schedule or other non-DoD Instrument</td><td></td><td></td><td>A</td><td>C</td></tr>
+<tr><td>Modification to an Order against a BPA under a Schedule (FY16and later)</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
+<tr><td>Modification to an Order against a BPA under a Schedule (Pre-FY16)</td><td>A</td><td>Use 0</td><td>B*</td><td>D*</td></tr>
+<tr><td>Modification to a DoD Contract, Purchase Order, BOA, BPA not under a Schedule, or other instrument</td><td></td><td></td><td>A</td><td>C</td></tr>
+<tr><td>Modification to an Order against a DoD Contract, BOA, or BPA not under a Schedule</td><td>A</td><td>Use 0</td><td>A</td><td>C</td></tr>
+<tr><td>(FY16 and later)</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>Modification to an Order against a DoD Contract, BOA, or BPA not under a Schedule (Pre-FY16)</td><td>A</td><td>Use 0</td><td>B*</td><td>D*</td></tr>
+<tr><td colspan="5">* Note that FPDS strips leading zeroes, so that modification 02 to order 0024 is shown as modification 2 to order 24.</td></tr>
 </table></div>
 </body>
 </html>
